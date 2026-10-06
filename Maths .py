@@ -134,7 +134,7 @@ n=int(input("enter the no"))
 prime(n)
 
 
-'''
+
 #10 Perfect square
 
 def sq(n):
@@ -145,3 +145,43 @@ def sq(n):
 
 n=int(input("no   pls"))
 sq(n)
+
+
+
+#11 largest element 
+
+def lar(arr):
+    lar=arr[0]
+    for i in range(len(arr)):
+        if arr[i]>lar:
+            lar=arr[i]
+
+    print(lar)        
+
+arr=list(map(int,input().split(",")))    
+lar(arr)
+
+
+
+#12   2nd largest element 
+
+def sl(arr):
+    l=float("-inf")
+    sl=float("-inf")
+
+    for i in range(len(arr)):
+        if arr[i]>l:
+            sl=l
+            l=arr[i]
+
+        elif arr[i]>sl:
+            sl=arr[i]
+            
+    print(sl)
+
+arr=list(map(int,input().split(",")))                
+sl(arr)
+'''
+
+
+#13 Array is sorted ?
